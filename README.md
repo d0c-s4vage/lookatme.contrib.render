@@ -1,12 +1,14 @@
 # lookatme.contrib.render
 
 This is a [lookatme](https://github.com/d0c-s4vage/lookatme) extension that
-renders code blocks of supported languages into PNG images, which are then
+renders code blocks of supported languages into images, which are then
 rendered using whichever image rendering options the user has available.
 
 To get something useful out of this extension, you must have an image-rendering
 contrib extension installed for lookatme that is able to display images, such
 as [lookatme.contrib.urwid_ueberzug](https://github.com/d0c-s4vage/lookatme.contrib.image_ueberzug).
+See [lookatme's list of known extensions](https://github.com/d0c-s4vage/lookatme)
+for other potential options.
 
 ## Example
 
@@ -23,6 +25,17 @@ pip install lookatme.contrib.render
 ```
 
 ## Usage
+
+Enable this plugin by adding it to the metadata in the head of the markdown file.
+
+```txt
+---
+title: <title>
+author: <author>
+extensions:
+  - render
+---
+```
 
 The following languages are currently supported:
 
