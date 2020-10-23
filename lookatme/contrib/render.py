@@ -18,6 +18,12 @@ from lookatme.render.markdown_inline import image as lookatme_image
 from lookatme.exceptions import IgnoredByContrib
 
 
+def user_warnings():
+    """No user warnings here
+    """
+    return []
+
+
 RENDERERS = {
     "graphviz": {
         "langs": ["dot", "graphviz"],
